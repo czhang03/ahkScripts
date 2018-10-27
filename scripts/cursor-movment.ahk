@@ -1,3 +1,5 @@
+#NoEnv
+
 ;; vim like basic cursor movement
 
 ^h::Send {Left}

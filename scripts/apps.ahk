@@ -1,3 +1,5 @@
+#NoEnv
+
 ;; use ctrl+' to control conemu
 ^':: 
     Process, Exist, ConEmu64.exe ; check to see if Printkey.exe is running
