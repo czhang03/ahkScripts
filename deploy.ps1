@@ -1,8 +1,7 @@
 $ProjectRoot = $PSScriptRoot
 $ScriptsPath = Join-Path -Path $ProjectRoot -ChildPath "scripts"
 
-$StartupPath = [environment]::getfolderpath("Startup")
-$StartupAhkPath = Join-Path -Path $StartupPath -ChildPath "ahkScripts"
+$StartupPath = [environment]::getfolderpath("Startup") 
 
-Copy-Item $ScriptsPath $StartupAhkPath -Recurse -Force
+Copy-Item $ScriptsPath/* $StartupPath -Recurse -Force
 
